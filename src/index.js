@@ -31,4 +31,5 @@ process.on('SIGINT', gracefulShutdown);
 process.on('SIGTERM', gracefulShutdown);
 process.on('SIGUSR2', gracefulShutdown); // Sent by nodemon
 
-// dit is een test
+
+// Dit is een kleine test
