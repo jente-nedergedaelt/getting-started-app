@@ -23,10 +23,12 @@ db.init().then(() => {
 
 const gracefulShutdown = () => {
     db.teardown()
-        .catch(() => {})
+        .catch(() => { })
         .then(() => process.exit());
 };
 
 process.on('SIGINT', gracefulShutdown);
 process.on('SIGTERM', gracefulShutdown);
 process.on('SIGUSR2', gracefulShutdown); // Sent by nodemon
+
+// dit is een test
